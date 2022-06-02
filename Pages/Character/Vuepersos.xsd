@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Vuepersos" targetNamespace="http://tempuri.org/Vuepersos.xsd" xmlns:mstns="http://tempuri.org/Vuepersos.xsd" xmlns="http://tempuri.org/Vuepersos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="projet_prosqlConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="projet_prosqlConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.formjdrppe.Properties.Settings.GlobalReference.Default.projet_prosqlConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_personnageTableAdapter" GeneratorDataComponentClassName="View_personnageTableAdapter" Name="View_personnage" UserDataComponentName="View_personnageTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="projet_prosqlConnectionString (Settings)" DbObjectName="projet_prosql.dbo.View_personnage" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nom, niveau, Expr1, pseudo, Expr2, dgt_cc, dgt_ad, def FROM dbo.View_personnage</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nom" DataSetColumn="nom" />
+              <Mapping SourceColumn="niveau" DataSetColumn="niveau" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="pseudo" DataSetColumn="pseudo" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="dgt_cc" DataSetColumn="dgt_cc" />
+              <Mapping SourceColumn="dgt_ad" DataSetColumn="dgt_ad" />
+              <Mapping SourceColumn="def" DataSetColumn="def" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Vuepersos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Vuepersos" msprop:Generator_UserDSName="Vuepersos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_personnage" msprop:Generator_TableClassName="View_personnageDataTable" msprop:Generator_TableVarName="tableView_personnage" msprop:Generator_TablePropName="View_personnage" msprop:Generator_RowDeletingName="View_personnageRowDeleting" msprop:Generator_RowChangingName="View_personnageRowChanging" msprop:Generator_RowEvHandlerName="View_personnageRowChangeEventHandler" msprop:Generator_RowDeletedName="View_personnageRowDeleted" msprop:Generator_UserTableName="View_personnage" msprop:Generator_RowChangedName="View_personnageRowChanged" msprop:Generator_RowEvArgName="View_personnageRowChangeEvent" msprop:Generator_RowClassName="View_personnageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nom" msprop:Generator_ColumnVarNameInTable="columnnom" msprop:Generator_ColumnPropNameInRow="nom" msprop:Generator_ColumnPropNameInTable="nomColumn" msprop:Generator_UserColumnName="nom">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="niveau" msprop:Generator_ColumnVarNameInTable="columnniveau" msprop:Generator_ColumnPropNameInRow="niveau" msprop:Generator_ColumnPropNameInTable="niveauColumn" msprop:Generator_UserColumnName="niveau" type="xs:int" />
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pseudo" msprop:Generator_ColumnVarNameInTable="columnpseudo" msprop:Generator_ColumnPropNameInRow="pseudo" msprop:Generator_ColumnPropNameInTable="pseudoColumn" msprop:Generator_UserColumnName="pseudo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dgt_cc" msprop:Generator_ColumnVarNameInTable="columndgt_cc" msprop:Generator_ColumnPropNameInRow="dgt_cc" msprop:Generator_ColumnPropNameInTable="dgt_ccColumn" msprop:Generator_UserColumnName="dgt_cc" type="xs:int" />
+              <xs:element name="dgt_ad" msprop:Generator_ColumnVarNameInTable="columndgt_ad" msprop:Generator_ColumnPropNameInRow="dgt_ad" msprop:Generator_ColumnPropNameInTable="dgt_adColumn" msprop:Generator_UserColumnName="dgt_ad" type="xs:int" />
+              <xs:element name="def" msprop:Generator_ColumnVarNameInTable="columndef" msprop:Generator_ColumnPropNameInRow="def" msprop:Generator_ColumnPropNameInTable="defColumn" msprop:Generator_UserColumnName="def" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
